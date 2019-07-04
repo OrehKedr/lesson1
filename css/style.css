@@ -67,10 +67,11 @@ body {
 
 .main-header-product-photo {
     display: block;
-    background-color:  #ffffff;
     width: 469px;
     height: 214px;
+    background-color:  #ffffff;    
     float: right;
+/*    transform: scale(.9);*/
 }
 
 .about{
@@ -404,7 +405,7 @@ details[open] summary:before{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    padding: 50px 250px;
+    padding: 50px 220px;
     box-sizing: border-box;
     background-color: #445162;
 }
@@ -425,7 +426,7 @@ footer form{
 }
 
 footer .socials{
-    width: 210px;
+    width: 240px;
 }
 
 form input{
@@ -492,6 +493,7 @@ form input[type="submit"]{
     border: 2px solid #ffffff;
     border-radius: 5px;
     box-sizing: border-box;
+    cursor: pointer;
 }
 
 form input[type="submit"]:hover{
@@ -518,27 +520,69 @@ form input[type="submit"]:active{
     width: 170px;
     height: 26px;
     margin: 0px 0 18px 0;
-    position: relative;
-    
+    position: relative;    
     font-family: Arial;
     font-size: 16px;
-    line-height: 24px;
+    line-height: 26px;
     text-align: left;
     color: #ffffff;    
 }
 
-.social-link:before{
-    content: "";
-    display: block;
-    width: 26px;
-    height: 26px;
-    position: absolute;
-    top: 0px;
-    left: -30px;
-
-    background-image: url('/css/Skype.png');
+.social-link:nth-child(1){
+    background-image: url('../img/skype_icon.png');
     -webkit-background-size: contain;
     background-size: contain;
     background-repeat: no-repeat;
-    background-position: center;
+    background-origin: border-box;
+    background-position: 0px 0px;
+    padding-left: 30px;
+}
+
+.social-link:nth-child(2){
+    background-image: url('../img/icq_icon.png');
+    -webkit-background-size: contain;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-origin: border-box;
+    background-position: 0px 0px;
+    padding-left: 30px;
+}
+
+.social-link:nth-child(3){
+    background-image: url('../img/email_icon.png');
+    -webkit-background-size: contain;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-origin: border-box;
+    background-position: 0px 0px;
+    padding-left: 30px;
+}
+
+.social-link:nth-child(4){
+    background-image: url('../img/phone_icon.png');
+    -webkit-background-size: contain;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-origin: border-box;
+    background-position: 0px 0px;
+    padding-left: 30px;
+}
+
+.socials a{
+    text-decoration: none;
+    color: inherit;
+}
+
+.fab{
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background-color: #ffffff;
+    border: 1px solid #ffffff;
+    border-radius: 20px;
+    box-sizing: border-box;
+    text-align: center;
+    line-height: 42px;
+    font-size: 20px;
+    margin: 0 2px 0 0;
 }
